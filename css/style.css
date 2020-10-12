@@ -1,0 +1,112 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  top:0px;
+}
+
+header{
+  background-image: linear-gradient(to right, #000000 10%, #6D0101);
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#F20574 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+  top:0px;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#3DF2F2;
+  font-weight:bold;
+  font-size:45px;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+#showcase{
+  min-height:795px;
+  background:url('../img/showcase.jpg') no-repeat 0 -100px;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding-top:210px;
+  padding-left: 40px;
+}
+
+#boxes .box img{
+  width:150px;
+}
+
+footer{
+  background-image: linear-gradient(to right, #000000 10%, #6D0101);
+  color:#ffffff;
+  padding-top:10px;
+  min-height:60px;
+  border-bottom:#F20574 3px solid;
+  text-align: left
+}
+
+footer .box{
+    float:left;
+    text-align: left;
+    width: 22%;
+    padding-top: 10px;
+    padding-left: 50px
+}
+
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box
+}
