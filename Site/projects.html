@@ -26,9 +26,16 @@
         <div class="box">
         </div>
         <div class="box">
-            <a href="./trab1/1ºAssignment-Rafael Palindra.pdf" target="_blank">
+            <a onClick="openFile()" target="_blank">
             <img src="./img/download.png" > </img></a>
-            <p>First Assignment - Rafael Palindra</p>
+            <p>First Assignment</p>
+            <label for="file">Choose a file:</label>
+                <select name="" id="firstassignment">
+                    <option value="./trab1/FirstAssignment-Rafael Palindra.pdf">Rafael Palindra, 52359</option>
+                    <option value="./trab1/FirstAssignmentt-Rafael Palindra.pdf">Joa&#771o Vale, 52760</option>
+                    <option value="./trab1/FirstAssignment-Rafael Palindra.pdf">Rafael Custo&#769dio, 53647</option>
+                    <option value="./trab1/FirstAssignment-Rafael Palindra.pdf">Pedro Silva, 52676</option>
+                </select>
             </div>
         <div class="box">
         </div>
@@ -39,7 +46,13 @@
       <p>Rafael Palindra, MIEI, 52359</p>
       <p>Pedro Silva, MIEI, 52676</p>
       <p>Rafael Custo&#769dio, MIEI, 53647</p>
-      <p>Joa&#771o Vale, MIEI, 52670</p>
+      <p>Joa&#771o Vale, MIEI, 52760</p>
     </footer>
   </body>
+
+  <script type="text/javascript">
+    function openFile(){
+         window.open(document.getElementById("firstassignment").value,'_blank');
+    }       
+</script>
 </html>
