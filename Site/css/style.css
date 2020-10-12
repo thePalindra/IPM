@@ -63,7 +63,7 @@ header a:hover{
 }
 
 #showcase{
-  min-height:700px;
+  min-height:795px;
   background:url('../img/showcase.jpg') no-repeat 0 -100px;
   text-align:center;
   color:#ffffff;
@@ -91,7 +91,15 @@ footer{
   padding-top:10px;
   min-height:60px;
   border-bottom:#F20574 3px solid;
-  text-align: center
+  text-align: left
+}
+
+footer .box{
+    float:left;
+    text-align: left;
+    width: 22%;
+    padding-top: 10px;
+    padding-left: 50px
 }
 
 @media(max-width: 768px){
