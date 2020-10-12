@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>First Assignments</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">IPM</span> 20/21</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="showcase">
+    <embed id="embed">
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+        </div>
+        <div class="box">
+          <div style="float: left">
+            <div onclick='open_file("./trab1/FirstAssignment-Rafael Palindra.pdf")'>
+              <img src="./img/download.png"> </img></div>
+            <p>Rafael Palindra, 52359</p>
+
+            <div onclick='open_file("./trab1/FirstAssignment-Valudo.pdf")'>
+              <img src="./img/download.png"> </img>
+            </div>
+            <p>Joa&#771o Vale, 52760</p>
+          </div>
+
+          <div style="float: right">
+            <div onclick='open_file("./trab1/FirstAssignment-Rafael Custodio.pdf")'> 
+              <img src="./img/download.png"> </img></div>
+            <p>Rafael Custo&#769dio, 53647</p>
+
+            <div onclick='open_file("./trab1/FirstAssignment-Silva.pdf")'>
+              <img src="./img/download.png"> </img></div>
+            <p>Pedro Silva, 52676</p>
+          </div>
+        </div>
+    </section>
+  </section>
+  <footer>
+    <p>Rafael Palindra, MIEI, 52359</p>
+    <p>Pedro Silva, MIEI, 52676</p>
+    <p>Rafael Custo&#769dio, MIEI, 53647</p>
+    <p>Joa&#771o Vale, MIEI, 52760</p>
+  </footer>
+</body>
+
+<script>
+  function open_file(id) {
+    let embed = document.getElementById("embed")
+    let showcase = document.getElementById("showcase")
+    embed.src = id
+    embed.style.height = showcase.offsetHeight + "px"
+    embed.style.width = '100%'
+
+    document.getElementById("boxes").style.display = "none"
+  }      
+</script>
+</html>

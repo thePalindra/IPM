@@ -27,17 +27,14 @@
     <section id="boxes">
       <div class="container">
         <div class="box">
-            <a href="./mainproject.html">
+        </div>
+        <div class="box">
+            <a onClick = 'open_file("./project/relatório 1.pdf")'>
             <img src="./img/download.png" > </img></a>
-            <p>Relato&#769rio</p>
+            <p>Relato&#769rio 1</p>
         </div>
         <div class="box">
         </div>
-        <div class="box">
-            <a href="./firstassignment.html">
-            <img src="./img/download.png" > </img></a>
-            <p>First Assignments</p>
-            </div>
     </section>
   </section>
   <footer>
@@ -47,4 +44,15 @@
     <p>Joa&#771o Vale, MIEI, 52760</p>
   </footer>
 </body>
+<script>
+  function open_file(id) {
+    let embed = document.getElementById("embed")
+    let showcase = document.getElementById("showcase")
+    embed.src = id
+    embed.style.height = showcase.offsetHeight + "px"
+    embed.style.width = '100%'
+
+    document.getElementById("boxes").style.display = "none"
+  }      
+</script>
 </html>
